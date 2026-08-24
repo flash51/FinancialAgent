@@ -1,11 +1,5 @@
 import requests
 import json
-import os
-
-
-api_key = os.getenv("OPENROUTER_API_KEY")
-if not api_key:
-  raise RuntimeError("OPENROUTER_API_KEY is not set")
 
 response = requests.post(
   url="https://openrouter.ai/api/v1/chat/completions",
