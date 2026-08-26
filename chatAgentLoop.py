@@ -53,6 +53,7 @@ def main() -> None:
         print("\nAssistant:", assistant_message["content"])
         messages.append(assistant_message)
 
+    
 
 if __name__ == "__main__":
     main()
