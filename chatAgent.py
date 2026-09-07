@@ -1,5 +1,11 @@
 import requests
 import json
+import os
+
+api_key = os.getenv("OPENROUTER_API_KEY")
+if not api_key:
+    raise RuntimeError("OPENROUTER_API_KEY is not set")
+
 
 response = requests.post(
   url="https://openrouter.ai/api/v1/chat/completions",
@@ -9,7 +15,7 @@ response = requests.post(
     "X-OpenRouter-Title": "<YOUR_SITE_NAME>", # Optional. Site title for rankings on openrouter.ai.
   },
   data=json.dumps({
-    "model": "~openai/gpt-latest",
+    "model": "openai/gpt-4o-mini",
     "messages": [
       {
         "role": "user",
@@ -18,3 +24,5 @@ response = requests.post(
     ]
   })
 )
+
+print (response.json()["choices"][0]["message"]["content"])
