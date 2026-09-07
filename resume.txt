@@ -1,0 +1,8 @@
+Ankur Sharma
+Software Engineer with 14 years of experience building web apps.
+Email: ankur.sharma@email.com
+Phone: +91-999-123-4567
+Experience:
+- Engineering Manager at Tech Corp (2021 - Present)
+- Junior Developer at Web Solutions (2018 - 2021)
+Skills: Python, FastAPI, JavaScript, React, SQL
