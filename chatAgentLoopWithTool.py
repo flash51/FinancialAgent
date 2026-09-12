@@ -40,7 +40,7 @@ input_list = [{"role": "user", "content": "What is my horoscope? I am an Taurus.
 
 # 2. Prompt the model with tools defined
 response = client.responses.create(
-    model="gpt-5.6",
+    model="minimax/minimax-m3:free",
     tools=tools,
     input=input_list,
 )
