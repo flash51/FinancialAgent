@@ -2,7 +2,7 @@
 
 Run with:
     export OPENROUTER_API_KEY="your-key"
-    python3 cvDetailsExtraction.py
+    python3 completeChatAgent.py
 """
 
 import json
